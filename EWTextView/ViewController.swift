@@ -12,9 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let textView = EWTextView(frame: CGRect(x: 50, y: 100, width: 250, height: 400))
+        textView.placeHolder = "5555啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"
+        textView.font = UIFont.systemFont(ofSize: 20)
+        self.view.addSubview(textView)
     }
-
-
 }
 

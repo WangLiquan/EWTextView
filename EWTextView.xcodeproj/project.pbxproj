@@ -14,6 +14,7 @@
 		841BDC5E225451850070C9AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841BDC5C225451850070C9AB /* LaunchScreen.storyboard */; };
 		841BDC69225451850070C9AB /* EWTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BDC68225451850070C9AB /* EWTextViewTests.swift */; };
 		841BDC74225451850070C9AB /* EWTextViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BDC73225451850070C9AB /* EWTextViewUITests.swift */; };
+		841BDC8422547DC20070C9AB /* EWTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BDC8322547DC20070C9AB /* EWTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		841BDC6F225451850070C9AB /* EWTextViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EWTextViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		841BDC73225451850070C9AB /* EWTextViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EWTextViewUITests.swift; sourceTree = "<group>"; };
 		841BDC75225451850070C9AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		841BDC8322547DC20070C9AB /* EWTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EWTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				841BDC53225451840070C9AB /* AppDelegate.swift */,
+				841BDC8322547DC20070C9AB /* EWTextView.swift */,
 				841BDC55225451840070C9AB /* ViewController.swift */,
 				841BDC57225451840070C9AB /* Main.storyboard */,
 				841BDC5A225451850070C9AB /* Assets.xcassets */,
@@ -258,6 +261,7 @@
 			files = (
 				841BDC56225451840070C9AB /* ViewController.swift in Sources */,
 				841BDC54225451840070C9AB /* AppDelegate.swift in Sources */,
+				841BDC8422547DC20070C9AB /* EWTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +439,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8V4DCL3BF;
 				INFOPLIST_FILE = EWTextView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +458,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8V4DCL3BF;
 				INFOPLIST_FILE = EWTextView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
