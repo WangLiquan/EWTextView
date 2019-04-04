@@ -20,4 +20,3 @@ class ViewController: UIViewController {
         self.view.addSubview(textView)
     }
 }
-

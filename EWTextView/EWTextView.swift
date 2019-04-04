@@ -11,31 +11,31 @@ import UIKit
 class EWTextView: UITextView {
     /// setNeedsDisplay调用drawRect
     var placeHolder: String = ""{
-        didSet{
+        didSet {
             self.setNeedsDisplay()
         }
     }
-    var placeHolderColor: UIColor = UIColor.gray{
-        didSet{
+    var placeHolderColor: UIColor = UIColor.gray {
+        didSet {
             self.setNeedsDisplay()
         }
     }
-    override var font: UIFont?{
-        didSet{
+    override var font: UIFont? {
+        didSet {
             self.setNeedsDisplay()
         }
     }
-    override var text: String!{
-        didSet{
+    override var text: String! {
+        didSet {
             self.setNeedsDisplay()
         }
     }
-    override var attributedText: NSAttributedString!{
-        didSet{
+    override var attributedText: NSAttributedString! {
+        didSet {
             self.setNeedsDisplay()
         }
     }
-    
+
     override init(frame: CGRect, textContainer: NSTextContainer?) {
         super.init(frame: frame, textContainer: textContainer)
         /// default字号
@@ -45,7 +45,7 @@ class EWTextView: UITextView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    @objc func textDidChanged(noti: NSNotification)  {
+    @objc func textDidChanged(noti: NSNotification) {
         self.setNeedsDisplay()
     }
     override func draw(_ rect: CGRect) {
@@ -65,11 +65,11 @@ class EWTextView: UITextView {
         super.layoutSubviews()
         self.setNeedsDisplay()
     }
-    
+
     deinit {
         NotificationCenter.default.removeObserver(self, name: UITextView.textDidChangeNotification, object: self)
     }
-    
+
 }
 
 extension String {
