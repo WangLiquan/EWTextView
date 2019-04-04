@@ -9,6 +9,7 @@
 import UIKit
 
 class EWTextView: UITextView {
+    /// setNeedsDisplay调用drawRect
     var placeHolder: String = ""{
         didSet{
             self.setNeedsDisplay()
@@ -37,6 +38,7 @@ class EWTextView: UITextView {
     
     override init(frame: CGRect, textContainer: NSTextContainer?) {
         super.init(frame: frame, textContainer: textContainer)
+        /// default字号
         self.font = UIFont.systemFont(ofSize: 14)
         NotificationCenter.default.addObserver(self, selector: #selector(textDidChanged(noti:)), name: UITextView.textDidChangeNotification, object: self)
     }
@@ -56,7 +58,7 @@ class EWTextView: UITextView {
         let size = self.placeHolder.getStringSize(rectSize: rect.size, font: self.font ?? UIFont.systemFont(ofSize: 14))
         newRect.size.width = size.width
         newRect.size.height = size.height
-        
+        /// 将placeHolder画在textView上
         (self.placeHolder as NSString).draw(in: newRect, withAttributes: [NSAttributedString.Key.font: self.font ?? UIFont.systemFont(ofSize: 14),NSAttributedString.Key.foregroundColor: self.placeHolderColor])
     }
     override func layoutSubviews() {
