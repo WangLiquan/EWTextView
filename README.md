@@ -8,4 +8,4 @@ Swift. UITextView添加placeHolder
 
 <br>
 
-![效果图预览](https://github.com/WangLiquan//raw/master/images/demonstration.gif)
+![效果图预览](https://github.com/WangLiquan/EWTextView/raw/master/images/demonstration.gif)
